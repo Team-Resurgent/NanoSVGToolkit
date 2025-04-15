@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NanoSVGToolkit", "NanoSVGToolkit\NanoSVGToolkit.csproj", "{738B9A5F-4541-4658-99E6-2F20DF56270C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NanoSVGToolkitTest", "NanoSVGToolkitTest\NanoSVGToolkitTest.csproj", "{F6AED18C-B8C3-458F-83AC-30A686E64FED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{738B9A5F-4541-4658-99E6-2F20DF56270C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{738B9A5F-4541-4658-99E6-2F20DF56270C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{738B9A5F-4541-4658-99E6-2F20DF56270C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{738B9A5F-4541-4658-99E6-2F20DF56270C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6AED18C-B8C3-458F-83AC-30A686E64FED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6AED18C-B8C3-458F-83AC-30A686E64FED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6AED18C-B8C3-458F-83AC-30A686E64FED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6AED18C-B8C3-458F-83AC-30A686E64FED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

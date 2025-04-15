@@ -1,1 +1,3 @@
-# NanoSVGToolkit
+NanoSVG Toolkit
+
+NanoSVG Toolkit library.

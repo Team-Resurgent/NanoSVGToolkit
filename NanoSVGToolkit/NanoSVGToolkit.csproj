@@ -1,0 +1,50 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+		<LangVersion>11.0</LangVersion>
+	</PropertyGroup>
+  
+	<PropertyGroup>
+		<Description>A NanoSVG toolkit library.</Description>
+		<AssemblyVersion>1.0.0</AssemblyVersion>
+		<Authors>EqUiNoX</Authors>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+		<AssemblyName>NanoSVGToolkit</AssemblyName>
+		<PackageId>NanoSVGToolkit</PackageId>
+		<PackagePrereleaseIdentifier></PackagePrereleaseIdentifier>
+		<PackageVersion>$(AssemblyVersion)$(PackagePrereleaseIdentifier)</PackageVersion>
+		<PackageTags>NanoSVG toolkit library</PackageTags>
+		<PackageProjectUrl>https://github.com/Team-Resurgent/XexUnpack</PackageProjectUrl>
+		<RootNamespace>NanoSVGToolkit</RootNamespace>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<Title>NanoSVGToolkit</Title>
+		<Copyright>Team Resurgent</Copyright>
+		<PackageReadmeFile>Readme.md</PackageReadmeFile>
+		<UserSecretsId>1bc5a42d-53e1-4b27-9f03-fec2cceadbd5</UserSecretsId>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Content Include="$(SolutionDir)native\win-x64\libNanoSVG.dll">
+			<PackagePath>runtimes/win-x64/native/libNanoSVG.dll</PackagePath>
+			<Pack>true</Pack>
+		</Content>
+		<Content Include="$(SolutionDir)native\linux-x64\libNanoSVG.so">
+			<PackagePath>runtimes/linux-x64/native/libNanoSVG.so</PackagePath>
+			<Pack>true</Pack>
+		</Content>
+		<Content Include="$(SolutionDir)native\osx\libNanoSVG.dylib">
+			<PackagePath>runtimes/osx/native/libNanoSVG.dylib</PackagePath>
+			<Pack>true</Pack>
+		</Content>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Include="..\Readme.md">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	</ItemGroup>
+
+</Project>
