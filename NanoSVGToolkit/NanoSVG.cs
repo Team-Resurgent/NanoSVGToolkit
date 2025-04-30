@@ -8,9 +8,24 @@ namespace NanoSVGToolkit
 {
     public static class NanoSVG
     {
-        public unsafe static byte[] RenderSVGToRawPixels(byte[] svg_data, ushort width, ushort height)
+        public unsafe static byte[] RenderSVGToRawPixels(byte[] svg_data, uint background, ushort width, ushort height)
         {
+            byte r = (byte)((background >> 16) & 0xFF);
+            byte g = (byte)((background >> 8) & 0xFF);
+            byte b = (byte)(background & 0xFF);
+
             var result = new byte[width * height * 4];
+
+            int offset = 0;
+            for (int i = 0; i < width * height; i++)
+            {
+                result[offset + 0] = r;
+                result[offset + 1] = g;
+                result[offset + 2] = b;
+                result[offset + 3] = 0x00;
+                offset += 4;
+            }
+
             fixed (byte* svg_data_array = svg_data)
             { 
                 fixed (byte* result_array = result)
