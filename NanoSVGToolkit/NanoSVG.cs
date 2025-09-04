@@ -8,7 +8,7 @@ namespace NanoSVGToolkit
 {
     public static class NanoSVG
     {
-        public unsafe static byte[] RenderSVGToRawPixels(byte[] svg_data, uint background, ushort width, ushort height)
+        public unsafe static byte[] RenderSVGToRawPixels(byte[] svg_data, uint background, ushort width, ushort height, ushort scale)
         {
             byte r = (byte)((background >> 16) & 0xFF);
             byte g = (byte)((background >> 8) & 0xFF);
@@ -30,7 +30,7 @@ namespace NanoSVGToolkit
             { 
                 fixed (byte* result_array = result)
                 {
-                    NanoSVGAPI.RenderSVG(svg_data_array, result_array, width, height);
+                    NanoSVGAPI.RenderSVG(svg_data_array, result_array, width, height, scale);
                 }
             }
             return result;
